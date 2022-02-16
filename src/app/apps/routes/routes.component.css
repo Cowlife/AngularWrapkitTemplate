@@ -1,0 +1,56 @@
+.add-on{
+  border: 2px solid #af7e17;
+  background: #ABA9A4;
+  margin-right: auto;
+  margin-bottom: 5px;
+  width: auto;
+  margin-left: auto;
+}
+
+.add-on2{
+  padding-left: 1em;
+  padding-right: 1em;
+  background: #CFCDC7;
+  color: #000000 ;
+  border: 2px solid #83264f;
+}
+
+.add-on3{
+  color: #000000;
+  background: #9DB7F5;
+}
+
+.add-on4{
+  border-radius: 32px;
+  background: #9DB7F5;
+  width: 32px;
+}
+
+.yellow{
+  background: #2fc937;
+}
+
+td{
+  color: #291729;
+}
+
+.distinction{
+  color: #000;
+  background:#B69E00;
+}
+
+.hacked {
+  background:#C0C0E1
+}
+.white{
+  background:#FFF;
+  text-align: center;
+}
+
+.alignment{
+  align-content: center;
+}
+
+.reference{
+  background: #1dc8cd;
+}

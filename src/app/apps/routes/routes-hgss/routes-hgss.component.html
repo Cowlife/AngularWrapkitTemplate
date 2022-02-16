@@ -1,0 +1,105 @@
+<div
+  class="static-slider-head filter"
+  style="background-image: url(https://icdn.digitaltrends.com/image/digitaltrends/pokemon-heartgold-3-500x500.jpg)"
+>
+  <div class="container">
+    <!-- Row  -->
+    <div class="row justify-content-center">
+      <!-- Column -->
+      <div class="col-lg-9 col-md-6 align-self-center text-center no-trans">
+        <h1 class="title bord">Pokemon Heartgold/Soulsilver</h1>
+        <h5 class="subtitle yay">
+          <b>Information about the pokemon present into the game´s routes.</b>
+        </h5>
+         <form action="#">
+           <select name="languages" id="lang">
+             <option *ngFor="let cal of topSelling" [id]="cal.id">{{cal.heading}}</option>
+           </select>
+           <input type="submit" value="Filter" />
+         </form>
+        <!-- <select>
+           <option [id]="acl.id" *ngFor="let acl of topSelling"><a [href]="acl.id">{{acl.heading}}</a></option>
+        </select> -->
+
+      </div>
+      <!-- Column -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="mini-spacer" *ngFor="let cl of topSelling" [id]="cl.id">
+<h1 class="center spacer">{{cl.heading}}</h1>
+
+
+<div  class="grid-container" >
+  <div class="item4"><button (click) = toggleDisplay()>See Items</button></div>
+  <div class="item1"><img [src]="cl?.image" alt="wrapkit" class="test center" onerror='this.style.display = "none"'/></div>
+  <div [hidden] = "isShow" class="item2" style="margin: auto">
+
+  <tbody *ngFor="let el of topSelling.slice(0, cl.ItemTitles.length)">
+  <tr><th class="add-on3" colspan="14" onerror='this.style.display = "none"'>{{cl.ItemTitles[el.id]}}</th></tr>
+  <ng-container *ngIf="cl.confirmL[el.id]">
+  <th class="add-on2" rowspan="1" colspan="2">{{cl.subHeading}}</th>
+  <th class="add-on2" rowspan="1" colspan="4">{{cl.description}}</th>
+  </ng-container>
+  <tr onerror='this.style.display = "none"' *ngFor="let fl of topSelling" style="text-align:center;">
+  <td class="white" onerror='this.style.display = "none"'>
+  <img [src]="cl? cl.ListImages[el.id][fl.id] : undefined" decoding="async" width="24" height="24" onerror='this.style.display = "none"'>
+  </td>
+  <td class="white" onerror='this.style.display = "none"'>{{ cl? cl.ListNames[el.id][fl.id]  : undefined }}</td>
+  <td class="white" onerror='this.style.display = "none"'>
+  <ul class="demo" onerror='this.style.display = "none"'>
+  <li>{{ cl? cl.ListDescription[el.id][fl.id]  : undefined }}</li>
+  </ul>
+  </td>
+  </tr>
+</tbody>
+
+  </div>
+
+  <div class="item5"><button (click) = toggleDisplay2()>See Pokemon</button></div>
+  <div [hidden] = "isShow2" class="item3">
+
+<!-- Green Titles -->
+
+
+<tbody *ngFor="let fl of topSelling.slice(0, cl.wildTitles.length)  ">
+<tr ><th class="add-on3" [style.background]="cl.backgroundWildTitles[fl.id]" colspan="9">{{cl ? cl.wildTitles[fl.id] : undefined}}</th>
+<tr ><th class="add-on2" rowspan="1" colspan="1">{{cl ? cl.wildTitles2[0] : undefined}}</th>
+<th class="add-on2" rowspan="1" colspan="1">{{cl ? cl.wildTitles2[1] : undefined}}</th>
+<th class="add-on2" rowspan="1" colspan="3">{{cl ? cl.wildTitles2[2] : undefined}}</th>
+<th class="add-on2" rowspan="1" colspan="4">{{cl ? cl.wildTitles2[3] : undefined}}</th></tr>
+
+<tr class="white" *ngFor="let gl of topSelling.slice(0,cl.encounters.length)" [style.background]="cl.backgroundVersions[fl.id][gl.id]">
+<td ><img [src]="cl? cl.encounterImages[fl.id][gl.id] : undefined "  onerror='this.style.display = "none"' width="64" height="64" >{{cl ? cl.encounters[fl.id][gl.id] : undefined}}</td>
+<td><img [src]="cl? cl.especificationsImages[fl.id][gl.id] : undefined " onerror='this.style.display = "none"'>{{cl ? cl.especifications[fl.id][gl.id] : undefined}}</td>
+<td [style.background]="cl.backgroundLevelRate[fl.id][gl.id]" [attr.colspan]="cl.lengthLevel$[fl.id][gl.id]" *ngIf="cl.confirmLevel[fl.id][gl.id]" onerror='this.style.display = "none"'>{{cl ? cl.levels[fl.id][gl.id] : undefined}}</td>
+<td [style.background]="cl.backgroundLevelRate2[fl.id][gl.id]" [attr.colspan]="cl.lengthLevelHacked[fl.id][gl.id]" *ngIf="cl.confirmLevelHacked[fl.id][gl.id]" onerror='this.style.display = "none"'>{{cl ? cl.levelsHacked[fl.id][gl.id] : undefined}}</td>
+<td *ngIf="cl.confirm[fl.id][gl.id]" [attr.colspan]="cl.length$[fl.id][gl.id]" [style.background]="cl.backgroundRate[fl.id][gl.id]" onerror='this.style.display = "none"'>{{cl ? cl.rates[fl.id][gl.id] : undefined}}</td>
+<td *ngIf="cl.confirmHacked[fl.id][gl.id]" [attr.colspan]="cl.lengthHacked[fl.id][gl.id]" [style.background]="cl.backgroundRate2[fl.id][gl.id]" onerror='this.style.display = "none"'>{{cl ? cl.rates2[fl.id][gl.id] : undefined}}</td>
+
+</tr>
+</tbody>
+
+
+<tbody>
+
+
+<td class="roundybottom add-on3" colspan="14"><small><b>{{cl.final}}</b></small></td></div>
+
+
+</div>
+
+</div>
+
+<script>
+
+
+</script>
+

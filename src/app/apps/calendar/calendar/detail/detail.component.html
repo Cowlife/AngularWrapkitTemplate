@@ -1,0 +1,135 @@
+<div
+  class="banner-innerpage"
+  style="background-image: url(assets/images/landingpage/bi.jpg)"
+>
+  <div class="container">
+    <!-- Row  -->
+    <div class="row justify-content-center">
+      <!-- Column -->
+      <div class="col-lg-9 col-md-6 align-self-center text-center">
+        <h1 class="title">DETAIL PAGE</h1>
+        <!--<h5 class="subtitle op-5">
+          We are Small Team of Creative People working together
+        </h5>-->
+
+      </div>
+      <!-- Column -->
+    </div>
+  </div>
+</div>
+<!--Can´t break limit id-->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 no-trans">
+      <div class="mini-spacer"><!--| slice:0:9; let i = index-->
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium" *ngFor="let cl of service.Calendars | slice:0:calendarDetail?.limit let i = index">
+          <img [src]="calendarDetail? calendarDetail.image[cl.id] : undefined" alt="wrapkit" width="60" class="rounded-circle" onerror='this.style.display = "none"' />
+          <a routerLink="" class="link">{{ calendarDetail? calendarDetail.blogDate[cl.id]  : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading[cl.id] : undefined }} </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium" *ngFor="let cl of service.Calendars | slice:0:calendarDetail?.limit let i = index">
+          <img [src]="calendarDetail? calendarDetail.image2[cl.id] : undefined" alt="wrapkit" width="60" class="rounded-circle" onerror='this.style.display = "none"'/>
+          <a routerLink="" class="link">{{ calendarDetail? calendarDetail.blogDate2[cl.id]  : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading2[cl.id] : undefined }} </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium" *ngFor="let cl of service.Calendars | slice:0:calendarDetail?.limit let i = index">
+          <img [src]="calendarDetail? calendarDetail.image3[cl.id] : undefined" alt="wrapkit" width="60" class="rounded-circle" onerror='this.style.display = "none"'/>
+          <a routerLink="" class="link">{{ calendarDetail? calendarDetail.blogDate3[cl.id]  : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading3[cl.id] : undefined }} </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium" *ngFor="let cl of service.Calendars | slice:0:calendarDetail?.limit let i = index">
+          <img [src]="calendarDetail? calendarDetail.image4[cl.id] : undefined" alt="wrapkit" width="60" class="rounded-circle" onerror='this.style.display = "none"'/>
+          <a routerLink="" class="link">{{ calendarDetail? calendarDetail.blogDate4[cl.id]  : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading4[cl.id] : undefined }} </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium" *ngFor="let cl of service.Calendars | slice:0:calendarDetail?.limit let i = index">
+          <img [src]="calendarDetail? calendarDetail.image5[cl.id] : undefined" alt="wrapkit" width="60" class="rounded-circle" onerror='this.style.display = "none"'/>
+          <a routerLink="" class="link">{{ calendarDetail? calendarDetail.blogDate5[cl.id]  : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading5[cl.id] : undefined }} </a>
+          </div>
+        </div>
+        <!--<div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium">
+          <img [src]="calendarDetail? calendarDetail.image[1] : undefined" alt="wrapkit" width="60" class="rounded-circle" />
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.blogDate[1] : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading[1] : undefined }} </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium">
+          <img [src]="calendarDetail? calendarDetail.image[2] : undefined" alt="wrapkit" width="60" class="rounded-circle" />
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.blogDate[2] : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading[2] : undefined }} </a>
+          </div>
+        </div>-->
+        <!--<div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium">
+          <img [src]="calendarDetail? calendarDetail.image[3] : undefined" alt="wrapkit" width="60" class="rounded-circle" />
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.blogDate[3] : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading[3] : undefined }} </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium">
+          <img [src]="calendarDetail? calendarDetail.image[4] : undefined" alt="wrapkit" width="60" class="rounded-circle" />
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.blogDate[4] : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading[4] : undefined }} </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium">
+          <img [src]="calendarDetail? calendarDetail.image[5] : undefined" alt="wrapkit" width="60" class="rounded-circle" />
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.blogDate[5] : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading[5] : undefined }} </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium">
+          <img [src]="calendarDetail? calendarDetail.image[6] : undefined" alt="wrapkit" width="60" class="rounded-circle" />
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.blogDate[6] : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading[6] : undefined }} </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium">
+          <img [src]="calendarDetail? calendarDetail.image[7] : undefined" alt="wrapkit" width="60" class="rounded-circle" />
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.blogDate[7] : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading[7] : undefined }} </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-uppercase m-t-40 font-13 font-medium">
+          <img [src]="calendarDetail? calendarDetail.image[8] : undefined" alt="wrapkit" width="60" class="rounded-circle" />
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.blogDate[8] : undefined }}</a>
+          <div class="ml-auto">
+          <a routerLink="" class="link">{{ calendarDetail ? calendarDetail.subHeading[8] : undefined }} </a>
+          </div>
+        </div>-->
+
+
+
+        </div>
+
+
+        <!--<div class="m-t-30">
+          <button type="button" class="btn bg-facebook btn-rounded mr-3">
+            <i class="fa fa-facebook"></i> Facebook
+          </button>
+          <button type="button" class="btn bg-twitter btn-rounded">
+            <i class="fa fa-twitter"></i> Twitter
+          </button>
+        </div>-->
+      </div>
+    </div>
+  </div>
+  <!-- Row  -->
+
+

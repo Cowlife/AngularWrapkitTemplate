@@ -1,0 +1,57 @@
+<div
+  class="static-slider-head"
+  style="background-image: url(assets/images/landingpage/bi.jpg)"
+>
+  <div class="container">
+    <!-- Row  -->
+    <div class="row justify-content-center">
+      <!-- Column -->
+      <div class="col-lg-9 col-md-6 align-self-center text-center no-trans">
+        <h1 class="title">Birthday Calendar</h1>
+        <h5 class="subtitle op-5">
+          A simple yet effective birthday calendar.
+        </h5>
+
+        <!--<a
+          href="https://www.wrappixel.com/free-wrapkit-angular-blog"
+          class="btn btn-md m-t-30 btn-success-gradiant font-14"
+          target="blank"
+          >Download Free</a
+        >-->
+      </div>
+      <!-- Column -->
+    </div>
+  </div>
+</div>
+
+<!-- Row  -->
+<div class="container spacer">
+
+  <div class="row m-t-40 justify-content-center">
+    <!-- Column -->
+    <div
+      class="col-md-8 no-trans border-bottom mb-4"
+      *ngFor="let cl of service.Calendars"
+    >
+      <div class="card" data-aos="flip-left" data-aos-duration="1200">
+        <div class="row">
+
+          <div class="col-md-7 no-trans">
+            <h5 class="font-medium cursor-pointer" (click)="viewDetail(cl.id)">
+              {{ cl.heading.substring(0, 50) }}
+            </h5>
+            <!--<p class="m-t-20">
+              {{ bl.subHeading }}
+            </p>-->
+          </div>
+          <div class="col-md-3 no-trans">
+            <a class="linking cursor-pointer">
+              <span (click)="viewDetail(cl.id)">List of Memories</span>
+              <i class="ti-gift"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.filter{
+  filter: grayscale(30%);
+}
+
+.bord{
+  text-shadow: 4px 4px #FF0000;
+}
+
+.yay{
+  text-shadow: 4px 4px #FF0000, 4px 4px #51dc99;
+}

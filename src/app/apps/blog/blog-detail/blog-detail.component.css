@@ -1,0 +1,4 @@
+.galimage [src =""]{
+  display: none;
+  border-radius: 50%;
+}

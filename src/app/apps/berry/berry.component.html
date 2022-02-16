@@ -1,0 +1,101 @@
+
+<div
+  class="banner-innerpage"
+  style="background-image: url(assets/images/landingpage/berry.jpg)"
+>
+  <div>
+    <!-- Row  -->
+    <div class="row justify-content-center">
+      <!-- Column -->
+      <div class="col-lg-9 col-md-6 align-self-center text-center">
+        <h1 class="title">Berry List</h1>
+        <!--<h5 class="subtitle op-5">
+          We are Small Team of Creative People working together
+        </h5>-->
+
+      </div>
+      <!-- Column -->
+    </div>
+  </div>
+</div>
+<!--Can´t break limit id-->
+<div class="container">
+  <div class="justify-content-left">
+    <div>
+      <div class="grid-container space mini-spacer"><!--| slice:0:9; let i = index-->
+        <div class= "grid-item extra-width font-13 font-medium" *ngFor="let cl of Berries">
+          <img [src]="cl?.image" alt="wrapkit" width="60" class="test" onerror='this.style.display = "none"' />
+          <a class="test2">{{ cl?.field }} </a>
+          <h5 >{{cl.fieldText}}</h5>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer4 b-t spacer align-content-center">
+    <h2 class="center mini-spacer">Types of Mulch - Generation IV</h2>
+    <div class="grid-container2 mini-spacer">
+      <div class="grid-item2" *ngFor="let cl of service.Berries | slice:0:4">
+      <img [src]="cl?.image" alt="wrapkit" width="60" class="test" onerror='this.style.display = "none"' />
+      <h4>{{cl.heading}}</h4>
+      <h6 align="justify">{{cl.subHeading}}</h6>
+      <h6 align="justify">{{cl.description}}</h6>
+      </div>
+    </div>
+    <h2 class = "center mini-spacer">Types of Mulch - Generation VI</h2>
+    <div class="grid-container2">
+      <div class="grid-item2" *ngFor="let cl of service.Berries | slice:4:8">
+      <img [src]="cl?.image" alt="wrapkit" width="60" class="test" onerror='this.style.display = "none"' />
+      <h4>{{cl.heading}}</h4>
+      <h6 align="justify">{{cl.subHeading}}</h6>
+      <h6 align="justify">{{cl.description}}</h6>
+      </div>
+    </div>
+    </div>
+
+  </div>
+<div class="hand">
+<h1 class="center">Berry Mutations</h1>
+<div class="grid-container3">
+<div class="footer4 b-t align-content-center">
+
+    <div class=" mini-spacer">
+      <div class="grid-item3 " *ngFor="let cl of Mutations">
+      <img [src]="cl?.image" alt="wrapkit" class="grid-item4 test" onerror='this.style.display = "none"' />
+      <h4>{{cl.field}}</h4>
+      </div>
+
+    </div>
+
+    </div>
+<div class="footer4 b-t align-content-center">
+    <div *ngFor="let mul of Mutations" class="fry mini-spacer round-social light"><h1>+</h1></div> <!--Iapapa-->
+    </div>
+<div class="footer4 b-t align-content-center">
+
+    <div class=" mini-spacer">
+      <div class="grid-item3 " *ngFor="let cl of Mutations2">
+      <img [src]="cl?.image" alt="wrapkit"  class="grid-item4 test" onerror='this.style.display = "none"' />
+      <h4>{{cl.field}}</h4>
+      </div>
+
+    </div>
+
+    </div>
+<div class="footer4 b-t align-content-center">
+  <div *ngFor="let nul of Mutations" class="fry mini-spacer round-social light"><h1>=</h1></div> <!--Iapapa-->
+</div>
+<div class="footer4 b-t align-content-center">
+
+    <div class=" mini-spacer">
+      <div class="grid-item3 " *ngFor="let cl of Mutations3">
+      <img [src]="cl?.image" alt="wrapkit"  class="grid-item4 test" onerror='this.style.display = "none"' />
+      <h4>{{cl.field}}</h4>
+      </div>
+
+    </div>
+
+
+    </div>
