@@ -401,54 +401,67 @@ Mutations2 = [
   {
       image: 'assets/images/berries/Mago.webp',
       field: 'Mago Berry',
+      margin: 6.5,
   },
   {
       image: 'assets/images/berries/Persim.webp',
       field: 'Persim Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Pecha.webp',
       field: 'Pecha Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Leppa.webp',
       field: 'Leppa Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Figy.webp',
       field: 'Figy Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Sitrus.webp',
       field: 'Sitrus Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Yache.webp',
       field: 'Yache Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Tanga.webp',
       field: 'Tanga Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Roseli.webp',
       field: 'Roseli Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Kasib.webp',
       field: 'Kasib Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Wacan.webp',
       field: 'Wacan Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Liechi.webp',
       field: 'Liechi Berry',
+      margin: 1.5,
   },
   {
       image: 'assets/images/berries/Salac.webp',
       field: 'Petaya Berry',
+      margin: 1.5,
   },
 ];
 

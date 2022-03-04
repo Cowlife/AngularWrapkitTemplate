@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {Routes, RouterModule, PreloadAllModules} from '@angular/router';
+import {CustomPreloadingStrategyService} from './apps/custom-preloading-strategy.service';
 
 
 
@@ -16,7 +17,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    preloadingStrategy: CustomPreloadingStrategyService
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
